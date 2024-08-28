@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body style="background-color: #222;">
+    <div id="container" class="flex flex-col h-screen justify-center gap-9 w-2/4 ml-36">
+        <div id="head" class="flex flex-col gap-3">
+            <h2 class="text-5xl font-bold text-white">Generate a</h2>
+            <h2 class="text-4xl font-bold text-green-600 underline underline-offset-4">Random Password</h2>
+        </div>
+        <div id="form" class="flex relative">
+            <input id ="feild" type="text" placeholder="Password" class="w-3/4 h-16 p-5 text-xl focus:outline-none">
+            <img src="images/copy.png" class="h-8 absolute inset-y-4 right-52" id = "cpy">
+        </div>
+
+        <button id = "btn" class="flex items-center bg-green-700 w-64 h-14 border-none rounded-lg text-slate-200 text-lg font-semibold">
+            <img src="./images/generate.png" alt="icon" class="w-6 h-6 ml-4">
+            <span class="ml-5">Generate Password</span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
